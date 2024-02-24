@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Player extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'Name', 'Ratings', 'Position', 'Version', 'PS', 'SKI', 'WF', 'WR', 'PAC', 'SHO', 'PAS', 'DRI', 'DEF', 'PHY', 'Body', 'Popularity', 'BS', 'IGS', 'Club', 'League', 'Country',
+    ];
+    
+
+    // Other model methods...
 }

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Edit Player</h1>
-    <form action="{{ route('admin.players.update', $player) }}" method="POST">
+    <form action="{{ route('andrew-bruce.update', $player) }}" method="POST">
         @csrf
         @method('PUT')
 

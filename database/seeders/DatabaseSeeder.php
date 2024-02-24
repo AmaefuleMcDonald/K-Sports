@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         // Call other seeders if necessary
         $this->call(AdminUserSeeder::class);
         $this->call(PlayersTableSeeder::class);
+        $this->call(PlayerSeeder::class);
     }
     
 }

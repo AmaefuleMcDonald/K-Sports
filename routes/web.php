@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PlayerController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ChatController;
+use App\Http\Controllers\StatsExplanationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,28 +33,78 @@ use App\Http\Controllers\PlayerController;
 //     ]);
 // });
 
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/players/search', [PlayerController::class, 'search'])->name('players.search');
 Route::get('language/{lang}', function ($lang) {
     Session::put('locale', $lang);
     return redirect()->back();
 });
+Route::post('/send-chat', [ChatController::class, 'sendChat'])->name('send.chat');
+
+// Login
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [RegisterController::class, 'register']);
+
+Route::get('/admin/free-agents', [PlayerController::class, 'showFreeAgents'])
+     ->middleware('auth') // Ensure this is protected by auth middleware
+     ->name('admin.free.agents.show'); // This name should match the one used in your button's href
+     Route::get('/stats-explanation', [StatsExplanationController::class, 'index'])->name('stats.explanation')->middleware('auth');
+     Route::get('/admin/players/{player}/edit', [AdminController::class, 'editPlayer'])->name('admin.players.edit')->middleware(['auth', 'admin']);
+     Route::put('/admin/players/{player}', [AdminController::class, 'updatePlayer'])->name('admin.players.update')->middleware(['auth', 'admin']);     
+    // Route::get('/admin/players', [AdminController::class, 'listPlayers'])->name('admin.players.list')->middleware('auth');
+   // Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->middleware('auth');
+
+   Route::get('/js/lang.js', function () {
+    $lang = App::getLocale();
+    $files   = glob(resource_path('lang/' . $lang . '/*.php'));
+    $strings = [];
+
+    foreach ($files as $file) {
+        $name = basename($file, '.php');
+        $strings[$name] = require $file;
+    }
+
+    header('Content-Type: text/javascript');
+    echo('window.i18n = ' . json_encode($strings) . ';');
+    exit();
+})->name('assets.lang');
+
+
 Route::middleware(['auth', 'checkrole:admin'])->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+   // Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::post('/admin/players', [AdminController::class, 'storePlayer'])->name('admin.players.store');
     Route::get('/admin/players', [AdminController::class, 'listPlayers'])->name('admin.players.list');
     Route::get('/admin/players/create', [AdminController::class, 'createPlayer'])->name('admin.players.create');
-    Route::post('/admin/players', [AdminController::class, 'storePlayer'])->name('admin.players.store');
+    //Route::get('/admin/players/list', [AdminController::class, 'listPlayers'])->name('admin.players.list');
+    //Route::post('/admin/players', [AdminController::class, 'storePlayer'])->name('admin.players.store');
     Route::get('/admin/players/{player}/edit', [AdminController::class, 'editPlayer'])->name('admin.players.edit');
     Route::put('/admin/players/{player}', [AdminController::class, 'updatePlayer'])->name('admin.players.update');
     Route::delete('/admin/players/{player}', [AdminController::class, 'deletePlayer'])->name('admin.players.delete');
+    //Route::get('/admin/andrew-bruce/edit', [PlayerController::class, 'editAndrewBruce'])->name('andrew-bruce.edit');
+    Route::get('/admin/andrew-bruce/edit/{id}', [PlayerController::class, 'editAndrewBruce'])->name('andrew-bruce.edit');
+
+    //Route::put('/admin/andrew-bruce/update', [PlayerController::class, 'updateAndrewBruce'])->name('andrew-bruce.update');
+    Route::put('/admin/andrew-bruce/update/{id}', [PlayerController::class, 'updateAndrewBruce'])->name('andrew-bruce.update');
+
 });
 
 
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+
+//  Route::get('/dashboard', function () {
+//      return Inertia::render('Dashboard');
+//  })->middleware(['auth', 'verified'])->name('dashboard');
+
+ Route::get('/dashboard', function () {
+    return redirect('/'); // Redirects to the home page
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -57,4 +112,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+//require __DIR__.'/auth.php';

@@ -3,5 +3,5 @@
 
 return [
     'welcome' => 'Bienvenido a K-Sports Social',
-    // Other French translations...
+    'followup' => 'Encuentra y conéctate con futbolistas agentes libres',
 ];
