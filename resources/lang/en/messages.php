@@ -46,6 +46,7 @@ return [
     'stats' => "Stats explanation",
     'free' => "Free Agent",
     'join' => "Join us today and get full access to exclusive content and features!",
+    'favorite' => "My favorite players",
     
     // Other English translations...
 ];

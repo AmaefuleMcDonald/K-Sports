@@ -11,6 +11,9 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\StatsExplanationController;
+use App\Http\Controllers\FavoritePlayerController;
+//use App\Http\Controllers\FavoritesController;
+use App\Http\Controllers\UserProfileController;
 
 
 /*
@@ -74,6 +77,10 @@ Route::get('/admin/free-agents', [PlayerController::class, 'showFreeAgents'])
     echo('window.i18n = ' . json_encode($strings) . ';');
     exit();
 })->name('assets.lang');
+
+// In routes/web.php
+Route::post('/players/{player}/toggle-favorite', [FavoritePlayerController::class, 'toggleFavorite'])->name('players.toggleFavorite')->middleware('auth');
+Route::get('/favorites', [FavoritePlayerController::class, 'showFavorites'])->name('favorites.index')->middleware('auth');
 
 
 Route::middleware(['auth', 'checkrole:admin'])->group(function () {

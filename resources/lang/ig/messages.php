@@ -49,4 +49,5 @@ return [
     'stats' => "nkọwa stats",
     'free' => "Ndị ọrụ nweere onwe ha",
     'join' => "Soro anyị taa wee nweta ohere zuru oke maka ọdịnaya na njirimara pụrụ iche!",
+    'favorite' => "Ndị egwu ọkacha mmasị m",
 ];

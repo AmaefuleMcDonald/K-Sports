@@ -46,5 +46,6 @@ return [
     'stats' => "explication des statistiques",
     'free' => "Agent libre",
     'join' => "Rejoignez-nous aujourd'hui et obtenez un accès complet au contenu et aux fonctionnalités exclusifs !",
+    'favorite' => "Mes joueurs préférés",
     // Other French translations...
 ];

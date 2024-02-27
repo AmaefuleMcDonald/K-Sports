@@ -7,6 +7,7 @@ use App\Models\Player; // Import your Player model
 use Illuminate\Support\Facades\DB;
 use League\Csv\Reader; // If you choose to use the league/csv package
 
+
 class PlayersTableSeeder extends Seeder
 {
     /**
@@ -14,8 +15,14 @@ class PlayersTableSeeder extends Seeder
      */
     public function run()
     {
-        // Empty the players table first if needed
-        DB::table('players')->truncate();
+     // Disable foreign key checks
+     DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+    
+     // Truncate the table
+     DB::table('players')->truncate();
+ 
+     // Enable foreign key checks
+     //DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         // Load the CSV document from a file path
         $csv = Reader::createFromPath(storage_path('app/Fifa 23 Fut Players.csv'), 'r');

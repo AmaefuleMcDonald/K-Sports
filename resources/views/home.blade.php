@@ -279,7 +279,7 @@ $(document).ready(function() {
                     <i class="fas fa-globe"></i> <!-- World icon -->
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navBarDropdown">
-    <a class="dropdown-item" href="{{ url('language/en') }}"><span class="flag-icon flag-icon-us mr-2"></span> English </a>
+    <a class="dropdown-item" href="{{ url('language/gb') }}"><span class="flag-icon flag-icon-gb mr-2"></span> English </a>
     <a class="dropdown-item" href="{{ url('language/fr') }}"><span class="flag-icon flag-icon-fr mr-2"></span> French</a>
     <a class="dropdown-item" href="{{ url('language/es') }}"><span class="flag-icon flag-icon-es mr-2"></span> Spanish</a>
     <a class="dropdown-item" href="{{ url('language/it') }}"><span class="flag-icon flag-icon-it mr-2"></span> Italian</a>
@@ -319,17 +319,19 @@ $(document).ready(function() {
     </li>
 @endauth
     
-    @auth
-        <a href="{{ route('admin.free.agents.show') }}" class="btn btn-primary">{{ __('messages.free') }}</a>
-    @endauth
-
-    <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" id="themeToggle">
       <i class="fas fa-sun" id="lightIcon"></i>
       <i class="fas fa-moon" id="darkIcon" style="display: none;"></i>
     </a>
 </li>
 
+    @auth
+        <a href="{{ route('admin.free.agents.show') }}" class="btn btn-primary">{{ __('messages.free') }}</a>
+    @endauth
+
+  
+<a href="{{ route('favorites.index') }}" class="btn btn-info">{{ __('messages.favorite') }}</a>
     </nav>
 
 

@@ -120,5 +120,6 @@ class PlayerController extends Controller
         // Return view with search results (you need to create this view)
         return view('players.search', compact('players'));
     }
+    
 
 }

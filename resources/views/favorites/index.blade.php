@@ -1,48 +1,25 @@
-{{-- resources/views/players/search.blade.php --}}
 @extends('layouts.app')
 
-
 @section('content')
-
-<div class="loading-container" sstyle="opacity: 0;"> <!-- Initially hidden -->
-  <div class="circle-loader"></div>
-  <p class="loading-text">Loading<span>.</span><span>.</span><span>.</span></p>
-</div>
-
-
-
 <div class="container">
-    <h1>Search Results</h1>
+    <h1>Favorite Players</h1>
 
-    @if($players->isEmpty())
-        <p>No players found.</p>
+    @if($favorites->isEmpty())
+        <p>No favorite players found.</p>
     @else
         <div class="row">
-            @foreach ($players as $player)
+            @foreach ($favorites as $player)
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">{{ $player->name }}
-                                @auth
-                                    @if (str_contains($player->name, 'Andrew Bruce'))
-                                        <span class="badge badge-info">{{ __('messages.free') }}</span> {{-- Customize this badge as needed --}}
-                                        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-                                    @endif
-                                @endauth
-                            </h5>
-                            {{-- Inside your loop for displaying player cards --}}
+                            <h5 class="card-title">{{ $player->name }}</h5>
+                            {{-- Button for toggling favorite status --}}
                             <form action="{{ route('players.toggleFavorite', $player->id) }}" method="POST">
-    @csrf
-    <button type="submit" class="btn btn-primary">
-        @if(auth()->user()->favoritePlayers->contains($player->id))
-            Remove from favorites
-        @else
-            Favorite <i class="fas fa-star"></i>
-        @endif
-    </button>
-</form>
-
-
+                                @csrf
+                                <button type="submit" class="btn btn-primary">
+                                Remove from favorites
+                                </button>
+                            </form>
                             <p class="card-text">Rating: {{ $player->ratings }}</p>
                             <p class="card-text">Position: {{ $player->position }}</p>
                             <p class="card-text">Version: {{ $player->version }}</p>
@@ -64,8 +41,9 @@
                             <p class="card-text">Country: <span class="flag-icon flag-icon-{{ strtolower(countryNameToCode($player->country)) }}"></span> {{ $player->country }}</p>
                             <p class="card-text">Club: {{ $player->club }}</p>
 
-                            <p class="card-text">Created At: {{ $player->created_at->toDayDateTimeString() }}</p>
-                            <p class="card-text">Last Updated: {{ $player->updated_at->toDayDateTimeString() }}</p>
+                            <p class="card-text">Created At: {{ $player->created_at->format('Y-m-d H:i:s') }}</p>
+<p class="card-text">Last Updated: {{ $player->updated_at->format('Y-m-d H:i:s') }}</p>
+
                         </div>
                     </div>
                 </div>
@@ -73,12 +51,4 @@
         </div>
     @endif
 </div>
-@endsection
-@section('scripts')
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.loading-container').style.display = 'none';
-  });
-</script>
-@yield('scripts')
 @endsection
