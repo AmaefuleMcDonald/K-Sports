@@ -34,7 +34,7 @@
                             <form action="{{ route('players.toggleFavorite', $player->id) }}" method="POST">
     @csrf
     <button type="submit" class="btn btn-primary">
-        @if(auth()->user()->favoritePlayers->contains($player->id))
+    @if(auth()->check() && auth()->user()->favoritePlayers->contains($player->id))
             Remove from favorites
         @else
             Favorite <i class="fas fa-star"></i>
