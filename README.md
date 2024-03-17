@@ -1,29 +1,30 @@
 
 Here's a concise guide for future users on setting up the project:
 
-Setup Guide
+**Setup Guide**
 Prerequisites
 PHP installed
 Composer installed
 MySQL or a compatible database service
-Steps
+
+**Steps**
 Clone the Repository: git clone https://github.com/AmaefuleMcDonald/K-Sports.git
 
 Install Dependencies: Navigate to the project directory and run composer install.
 
-Environment Configuration:
+**Environment Configuration:**
 
 Copy the .env.example file to a new file named .env.
 Update the .env file with your local settings, especially the DB_* values to match your database configuration. Use the details provided for a quick setup.
 Generate App Key: Run php artisan key:generate to set the APP_KEY in the .env file.
 
-Migrate and Seed Database:
+**Migrate and Seed Database:**
 
 Run php artisan migrate to create the database schema.
 Import Fifa 23 Fut Players.csv from storage/app/ to your database or use php artisan db:seed to populate it with initial data if seeders are provided.
 Serve the Application: Run php artisan serve and visit the provided URL in your browser.
 
-Data Import
+**Data Import**
 To get the players' data into your local setup:
 
 Access the Fifa 23 Fut Players.csv in storage/app/ directory.
