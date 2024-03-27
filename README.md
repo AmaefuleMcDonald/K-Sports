@@ -3,8 +3,8 @@ Here's a concise guide for future users on setting up the project:
 
 **Setup Guide**
 Prerequisites
-PHP installed
-Composer installed
+PHP installed,
+Composer installed,
 MySQL or a compatible database service
 
 **Steps**
