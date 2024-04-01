@@ -93,4 +93,6 @@ return [
     'News3' => "Akpọrọ Olga na Linda Caicedo na iri na otu kacha mma nke 2023 site na International Federation of Football History and Statistics IFFHS. Ihe nrite a na-amata ihe ndị egwuregwu Madrid abụọ rụzuru n'afọ gara aga. Olga meriri goolu akụkọ ihe mere eme nke meriri Spain n'asọmpị iko mba ụwa wee bụrụ onye ọkpụkpọ ikpeazụ. Linda nwekwara onyinye pụtara ìhè na iko mba ụwa na Colombia, otu o dugara na nkeji iri na ise.
 
     A họpụtala ndị egwuregwu abụọ ahụ maka bọọlụ ọla edo. A kpọkwara Linda aha Golden Girl 2023 maka onye ọkpụkpọ kacha mma n'okpuru 21s ma bụrụ otu n'ime ndị ikpeazụ maka FIFA Best Player of the Year 2023. N'isonye ndị egwuregwu Real Madrid abụọ n'ime otu ahụ bụ Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr na Salma Paralluelo.",
+
+    'message_sent' => "Ezitere ozi",
 ];

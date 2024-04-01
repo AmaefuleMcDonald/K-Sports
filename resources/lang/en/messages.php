@@ -90,4 +90,6 @@ return [
     'News3' => "Olga and Linda Caicedo have been named in the best eleven of 2023 by the International Federation of Football History and Statistics IFFHS. This award recognizes the two Madrid players' achievements over the past year.  Olga  scored the historic goal that won Spain the World Cup and was voted player of the final.  Linda  also had an outstanding contribution to the World Cup with Colombia, a team she led to the quarter-finals.
 
     Both players have been nominated for the Golden Ball. Linda was also named  Golden Girl 2023  for the best Under-21s player and is one of the finalists for  The Best FIFA Women's Player of the Year 2023 . Joining the two Real Madrid players in the team are Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr and Salma Paralluelo.",
+
+    'message_sent' => "Message Sent.",
 ];

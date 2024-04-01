@@ -90,4 +90,6 @@ return [
     'News3' => "Olga und Linda Caicedo wurden von der International Federation of Football History and Statistics IFFHS in die besten Elf des Jahres 2023 aufgenommen. Mit dieser Auszeichnung werden die Leistungen der beiden Madrider Spieler im vergangenen Jahr gewürdigt. Olga erzielte das historische Tor, das Spanien den Weltmeistertitel bescherte, und wurde zur Spielerin des Finales gewählt. Linda leistete auch einen herausragenden Beitrag zur Weltmeisterschaft mit Kolumbien, eine Mannschaft, die sie bis ins Viertelfinale führte.
 
     Beide Spieler wurden für den Goldenen Ball nominiert. Linda wurde außerdem zum Golden Girl 2023 für die beste U21-Spielerin gekürt und ist eine der Finalistinnen für die Wahl zur besten FIFA-Spielerin des Jahres 2023. Zu den beiden Spielern von Real Madrid im Team gesellen sich Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr und Salma Paralluelo.",
+
+    'message_sent' => "Nachricht gesendet",
 ];

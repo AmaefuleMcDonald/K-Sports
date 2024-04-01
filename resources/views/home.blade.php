@@ -344,16 +344,18 @@ $(document).ready(function() {
     </ul>
 </nav>
 
-    <!-- Chat Tab Button -->
+<!-- Chat Tab Button -->
 <div id="chatTab" style="position: fixed; bottom: 20px; right: 20px; z-index: 100;">
-    <button onclick="toggleChatForm()">{{ __('messages.chat') }}</button>
+    <button type="button" onclick="toggleChatForm()">{{ __('messages.chat') }}</button>
     <!-- Chat Form (Initially Hidden) -->
     <div id="chatForm" style="display: none;">
-        <form action="{{ route('send.chat') }}" method="POST">
+    <form onsubmit="return sendMessage(event)">
+
             @csrf
-            <textarea name="message" placeholder="{{ __('messages.message') }}" required></textarea>
+            <textarea id="chatMessage" name="message" placeholder="{{ __('messages.message') }}" required></textarea>
             <button type="submit">{{ __('messages.send') }}</button>
         </form>
+        <div id="sentMessage" style="display: none; color: #006400;">{{ __('messages.message_sent') }}</div>
     </div>
 </div>
 
@@ -362,6 +364,18 @@ $(document).ready(function() {
         var chatForm = document.getElementById("chatForm");
         chatForm.style.display = chatForm.style.display === "none" ? "block" : "none";
     }
+
+    function sendMessage(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        document.getElementById("sentMessage").style.display = "block"; // Show the "Message Sent" div
+        document.getElementById("chatMessage").value = ""; // Clear the message textarea
+        setTimeout(() => {
+            document.getElementById("sentMessage").style.display = "none"; // Optionally hide the message after a few seconds
+        }, 3000); // 3000 milliseconds = 3 seconds
+        return false; // Return false to prevent form submission
+    }
+
+
 </script>
 
 

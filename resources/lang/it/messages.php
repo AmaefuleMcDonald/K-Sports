@@ -90,4 +90,6 @@ return [
     'News3' => "Olga e Linda Caicedo sono state nominate tra le migliori undici del 2023 dalla Federazione internazionale di storia e statistica del calcio IFFHS. Questo premio riconosce i risultati ottenuti dai due giocatori del Real Madrid nell'ultimo anno. Olga ha segnato lo storico gol che ha fatto vincere alla Spagna la Coppa del Mondo ed è stata eletta giocatrice della finale. Linda ha dato un contributo eccezionale anche ai Mondiali con la Colombia, squadra che ha portato ai quarti di finale.
 
     Entrambi i giocatori sono stati nominati per il Pallone d'Oro. Linda è stata anche nominata Golden Girl 2023 come miglior giocatrice Under 21 ed è una delle finaliste per la migliore giocatrice femminile dell'anno FIFA 2023. Insieme ai due giocatori del Real Madrid in squadra ci sono Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr e Salma Paralluelo.",
+
+    'message_sent' => "Messaggio inviato.",
 ];

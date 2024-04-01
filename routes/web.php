@@ -43,7 +43,7 @@ Route::get('language/{lang}', function ($lang) {
     Session::put('locale', $lang);
     return redirect()->back();
 });
-Route::post('/send-chat', [ChatController::class, 'sendChat'])->name('send.chat');
+//Route::post('/send-chat', [ChatController::class, 'sendChat'])->name('send.chat');
 
 // Login
 
