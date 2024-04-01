@@ -72,4 +72,25 @@ return [
     'clubexp' => "Klọb a na-enye kaadị onye ọkpụkpọ na FUT.",
     'leagueexp' => "Njikọ nke klọb onye ọkpụkpọ na-esonye na ọnọdụ FUT.",
     'countryexp' => "Obodo onye ọkpụkpọ.",
+
+    'Headline1' => "Gianni Infantino: 33% na-akwụ ụgwọ maka onye isi FIFA onye gwara ụmụ nwanyị na ha ga-amanye mgbanwe n'etiti oku a na-akwụ maka nha nhata.",
+    'Headline2' => "Onye bụbu onye ọka ikpe Premier League Jon Moss hapụrụ ọrụ PGMOL kachasị elu mgbe 'ọdịda dị ilu' nwere ndị nyocha kachasị elu.",
+    'Headline3' => "Olga na Linda Caicedo kpọrọ aha na IFFHS World XI 2023",
+    'News1' => "Onye isi ala FIFA Gianni Infantino enwetala ịrị elu 33% ịkwụ ụgwọ iji gbaa bọọlụ ụwa nke pụtara na ụgwọ ọnwa ya karịrị £3.6m n'afọ gara aga, Sky News achọpụtala.
+
+    Mmụba n'oge afọ iko mba ụwa nke ụmụ nwanyị gosipụtara miri emi na akwụkwọ ego nke FIFA Council kwadoro na Tọzdee wee zigara ndị isi egwuregwu bọọlụ ụwa.
+   
+    Salarygwọ isi nke Mr Infantino bụ 1.95m Swiss francs (£ 1.7m) na 2022 yana ego 1.65m Swiss franc (£ 1.5m) - mkpokọta ruru ihe dị ka £ 3.2m.",
+
+    'News2' => "Onye bụbu onye ọka ikpe Premier League Jon Moss hapụrụ ọrụ ya na ndị omebe iwu PGMOL ka ya na ndị isi ndị ọzọ nwesịrị ọgụ, ka ekwuru.
+
+    Moss, 53, nọrọ ihe karịrị afọ iri dị ka onye ọka ikpe na ọkwa kacha elu nke bọọlụ Bekee. Oge Premier League ikpeazụ ya bịara na 2021-22, ebe ọ bụkwa onye na-elekọta asọmpi egwuregwu ikpeazụ n'etiti Huddersfield Town na Nottingham Forest.
+   
+    N'afọ sochirinụ, PGMOL nyere ya ọkwa dị ka onye isi ndị isi Premier League, na-esonye na mbụ dị ka onye njikwa nke otu a na-ajụ ajụjụ. Agbanyeghị, ọ nọrọ ihe na-erughị otu afọ n'ọrụ ya kacha nso nso a, na-ahapụ ọnwa a ozugbo.
+   
+    Dị ka The Telegraph si kwuo, ọpụpụ ya sochiri 'oke ilu' na ọtụtụ ndị isi ndị isi. Otu akwụkwọ ahụ kwuru na onye isi ndị ọka iwu Howard Webb ga-eweghara ọrụ Moss maka oge fọdụrụ na 2023-24.",
+
+    'News3' => "Akpọrọ Olga na Linda Caicedo na iri na otu kacha mma nke 2023 site na International Federation of Football History and Statistics IFFHS. Ihe nrite a na-amata ihe ndị egwuregwu Madrid abụọ rụzuru n'afọ gara aga. Olga meriri goolu akụkọ ihe mere eme nke meriri Spain n'asọmpị iko mba ụwa wee bụrụ onye ọkpụkpọ ikpeazụ. Linda nwekwara onyinye pụtara ìhè na iko mba ụwa na Colombia, otu o dugara na nkeji iri na ise.
+
+    A họpụtala ndị egwuregwu abụọ ahụ maka bọọlụ ọla edo. A kpọkwara Linda aha Golden Girl 2023 maka onye ọkpụkpọ kacha mma n'okpuru 21s ma bụrụ otu n'ime ndị ikpeazụ maka FIFA Best Player of the Year 2023. N'isonye ndị egwuregwu Real Madrid abụọ n'ime otu ahụ bụ Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr na Salma Paralluelo.",
 ];

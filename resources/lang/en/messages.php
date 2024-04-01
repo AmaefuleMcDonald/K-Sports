@@ -69,5 +69,25 @@ return [
     'clubexp' => "The club for which the player's card is issued in FUT.",
     'leagueexp' => "The league to which the player's club belongs in the context of FUT.",
     'countryexp' => "The nationality of the player.",
-    // Other English translations...
+
+    'Headline1' => "Gianni Infantino: 33% pay rise for FIFA boss who told women they must 'force change' amid calls for equal pay",
+    'Headline2' => "Ex-Premier League referee Jon Moss left top PGMOL role after 'bitter fallout' with top refs",
+    'Headline3' => "Olga and Linda Caicedo named in IFFHS World XI 2023",
+    'News1' => "FIFA President Gianni Infantino has secured a 33% pay rise to run world football which meant his salary exceeded £3.6m last year, Sky News has found.
+
+    The increase during the Women's World Cup year featured deep in financial documents approved by the FIFA Council on Thursday and sent to global football officials.
+    
+    Mr Infantino's base salary was 1.95m Swiss francs (£1.7m) in 2022 with a bonus of 1.65m Swiss francs (£1.5m) - a total equating to about £3.2m.",
+
+    'News2' => "Former Premier League referee Jon Moss left his role with referees' body the PGMOL after clashing with other officials, it has been claimed.
+
+    Moss, 53, spent more than a decade as a referee in English football's top tier. His final Premier League season came in 2021-22, while he also took charge of the Championship play-off final between Huddersfield Town and Nottingham Forest.
+    
+    The following year, he was handed a post by the PGMOL as the director of Premier League officials, having initially joined as manager of the group in question. However, he lasted less than a year in his most recent role, leaving this month with immediate effect.
+    
+    According to The Telegraph, his exit followed a 'bitter' falling out with a number of leading officials. The same publication notes that referees chief Howard Webb will take over Moss' responsibilities for the remainder of the 2023-24 season.",
+
+    'News3' => "Olga and Linda Caicedo have been named in the best eleven of 2023 by the International Federation of Football History and Statistics IFFHS. This award recognizes the two Madrid players' achievements over the past year.  Olga  scored the historic goal that won Spain the World Cup and was voted player of the final.  Linda  also had an outstanding contribution to the World Cup with Colombia, a team she led to the quarter-finals.
+
+    Both players have been nominated for the Golden Ball. Linda was also named  Golden Girl 2023  for the best Under-21s player and is one of the finalists for  The Best FIFA Women's Player of the Year 2023 . Joining the two Real Madrid players in the team are Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr and Salma Paralluelo.",
 ];

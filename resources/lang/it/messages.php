@@ -69,4 +69,25 @@ return [
     'clubexp' => "il club per il quale viene emessa la carta del giocatore in FUT.",
     'leagueexp' => "la lega a cui appartiene il club del giocatore nel contesto di FUT.",
     'countryexp' => "la nazionalità del giocatore.",
+
+    'Headline1' => "Gianni Infantino: aumento di stipendio del 33% per il capo della FIFA che ha detto alle donne che devono 'forzare il cambiamento' tra le richieste di parità di retribuzione",
+    'Headline2' => "L'ex arbitro della Premier League Jon Moss ha lasciato il ruolo di vertice della PGMOL dopo 'aspre ricadute' con i migliori arbitri",
+    'Headline3' => "Olga e Linda Caicedo nominate nell'IFFHS World XI 2023",
+    'News1' => "Il presidente della FIFA Gianni Infantino si è assicurato un aumento di stipendio del 33% per dirigere il calcio mondiale, il che significa che il suo stipendio ha superato i 3,6 milioni di sterline lo scorso anno, ha scoperto Sky News.
+
+    L'aumento durante l'anno della Coppa del Mondo femminile è stato ampiamente evidenziato nei documenti finanziari approvati dal Consiglio FIFA giovedì e inviati ai funzionari del calcio globale.
+   
+    Lo stipendio base del signor Infantino era di 1,95 milioni di franchi svizzeri (1,7 milioni di sterline) nel 2022 con un bonus di 1,65 milioni di franchi svizzeri (1,5 milioni di sterline), per un totale pari a circa 3,2 milioni di sterline.",
+
+    'News2' => "L'ex arbitro della Premier League Jon Moss ha lasciato il suo incarico presso l'organismo arbitrale del PGMOL dopo essersi scontrato con altri arbitri, è stato affermato.
+
+    Moss, 53 anni, ha trascorso più di dieci anni come arbitro nella massima serie del calcio inglese. La sua ultima stagione in Premier League è arrivata nel 2021-22, mentre ha anche diretto la finale degli spareggi di campionato tra Huddersfield Town e Nottingham Forest.
+   
+    L'anno successivo gli viene affidato dalla PGMOL l'incarico di direttore dei dirigenti della Premier League, dopo essere entrato inizialmente come manager del gruppo in questione. Tuttavia, è durato meno di un anno nel suo ruolo più recente, lasciando questo mese con effetto immediato.
+   
+    Secondo The Telegraph, la sua uscita è avvenuta dopo un 'aspro' litigio con un certo numero di importanti funzionari. La stessa pubblicazione rileva che il capo degli arbitri Howard Webb assumerà le responsabilità di Moss per il resto della stagione 2023-24.",
+
+    'News3' => "Olga e Linda Caicedo sono state nominate tra le migliori undici del 2023 dalla Federazione internazionale di storia e statistica del calcio IFFHS. Questo premio riconosce i risultati ottenuti dai due giocatori del Real Madrid nell'ultimo anno. Olga ha segnato lo storico gol che ha fatto vincere alla Spagna la Coppa del Mondo ed è stata eletta giocatrice della finale. Linda ha dato un contributo eccezionale anche ai Mondiali con la Colombia, squadra che ha portato ai quarti di finale.
+
+    Entrambi i giocatori sono stati nominati per il Pallone d'Oro. Linda è stata anche nominata Golden Girl 2023 come miglior giocatrice Under 21 ed è una delle finaliste per la migliore giocatrice femminile dell'anno FIFA 2023. Insieme ai due giocatori del Real Madrid in squadra ci sono Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr e Salma Paralluelo.",
 ];

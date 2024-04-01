@@ -6,12 +6,8 @@
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="news-content">
-                    <h1>Gianni Infantino: 33% pay rise for FIFA boss who told women they must 'force change' amid calls for equal pay</h1>
-                    <p>FIFA President Gianni Infantino has secured a 33% pay rise to run world football which meant his salary exceeded £3.6m last year, Sky News has found.
-
-The increase during the Women's World Cup year featured deep in financial documents approved by the FIFA Council on Thursday and sent to global football officials.
-
-Mr Infantino's base salary was 1.95m Swiss francs (£1.7m) in 2022 with a bonus of 1.65m Swiss francs (£1.5m) - a total equating to about £3.2m.</p>
+                    <h1>{{ __('messages.Headline1') }}</h1>
+                    <p>{{ __('messages.News1') }}</p>
                    
                 </div>
             </div>

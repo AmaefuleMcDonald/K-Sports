@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     <a href="{{ url('/news/news1') }}" >
         <img src="https://media.gettyimages.com/id/1442727498/photo/doha-qatar-fifa-president-gianni-infantino-speaks-during-a-press-conference-at-the-main-media.jpg?s=612x612&w=0&k=20&c=JEDXqa7jz9hpVUIVdtDFa9da5dGKTpA3KPUx9aRSF1g=" alt="News 1" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Gianni Infantino: 33% pay rise for FIFA boss who told women they must 'force change' amid calls for equal pay</h5>
+          <h5> {{ __('messages.Headline1') }}</h5>
         </div>
       </a>
     </div>
@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     <a href="{{ url('/news/news2') }}" >
         <img src="https://media.gettyimages.com/id/1446644017/photo/doha-qatar-headset-of-referee-during-the-fifa-world-cup-qatar-2022-round-of-16-match-between.jpg?s=612x612&w=0&k=20&c=h6C6Y0INmK1OXtzKyCIrG9jKKf3urvV-TbPkflNxHbc=" alt="News 2" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Ex-Premier League referee Jon Moss left top PGMOL role after 'bitter fallout' with top refs</h5>
+          <h5>{{ __('messages.Headline2') }}</h5>
         </div>
       </a>
     </div>
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       <a href="{{ url('/news/news3') }}" >
         <img src="https://media.gettyimages.com/id/1996043769/photo/alcala-de-henares-spain-linda-caicedo-of-real-madrid-controls-the-ball-during-the-spanish.jpg?s=612x612&w=0&k=20&c=mEptdrneFGu-EE0AQdz8rcqIvDAB5bmGzrtP5-Ury1c=" alt="News 2" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Olga and Linda Caicedo named in IFFHS World XI 2023</h5>
+          <h5>{{ __('messages.Headline3') }}</h5>
         </div>
       </a>
     </div>

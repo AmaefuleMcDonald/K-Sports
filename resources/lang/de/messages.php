@@ -69,4 +69,25 @@ return [
     'clubexp' => "Der Verein, für den die Spielerkarte in FUT ausgestellt wird.",
     'leagueexp' => "Die Liga, zu der der Verein des Spielers im FUT-Kontext gehört.",
     'countryexp' => "Die Nationalität des Spielers.",
+
+    'Headline1' => "Gianni Infantino: 33 % Gehaltserhöhung für FIFA-Chef, der den Frauen sagte, sie müssten „Änderungen erzwingen“, während sie gleiche Bezahlung forderten",
+    'Headline2' => "Ex-Premier-League-Schiedsrichter Jon Moss hat seine Führungsrolle bei PGMOL nach „erbittertem Streit“ mit Top-Schiedsrichtern aufgegeben",
+    'Headline3' => "Olga und Linda Caicedo werden in der IFFHS World XI 2023 genannt",
+    'News1' => "Wie Sky News herausgefunden hat, hat sich FIFA-Präsident Gianni Infantino eine Gehaltserhöhung von 33 % für die Leitung des Weltfußballs gesichert, was bedeutet, dass sein Gehalt letztes Jahr 3,6 Millionen Pfund überstieg.
+
+    Die Erhöhung während des Frauen-WM-Jahres wurde tief in Finanzdokumenten vermerkt, die am Donnerstag vom FIFA-Rat genehmigt und an globale Fußballfunktionäre geschickt wurden.
+   
+    Das Grundgehalt von Herrn Infantino betrug im Jahr 2022 1,95 Millionen Schweizer Franken (1,7 Millionen Pfund), mit einem Bonus von 1,65 Millionen Schweizer Franken (1,5 Millionen Pfund) – was insgesamt etwa 3,2 Millionen Pfund entspricht.",
+
+    'News2' => "Es wurde behauptet, dass der frühere Premier-League-Schiedsrichter Jon Moss seine Rolle bei der Schiedsrichterorganisation PGMOL nach einem Zusammenstoß mit anderen Funktionären aufgegeben habe.
+
+    Der 53-jährige Moss war mehr als ein Jahrzehnt als Schiedsrichter in der höchsten Spielklasse des englischen Fußballs tätig. Seine letzte Premier-League-Saison fand 2021/22 statt, während er auch das Championship-Play-off-Finale zwischen Huddersfield Town und Nottingham Forest leitete.
+   
+    Im folgenden Jahr wurde ihm von der PGMOL ein Posten als Direktor der Premier-League-Funktionäre übertragen, nachdem er zunächst als Manager der betreffenden Gruppe eingestiegen war. Allerdings blieb er in seiner letzten Position weniger als ein Jahr und schied diesen Monat mit sofortiger Wirkung aus.
+   
+    Laut The Telegraph folgte sein Ausstieg einem „erbitterten“ Streit mit einer Reihe führender Beamter. In derselben Veröffentlichung heißt es, dass Schiedsrichterchef Howard Webb die Verantwortung von Moss für den Rest der Saison 2023/24 übernehmen wird.",
+
+    'News3' => "Olga und Linda Caicedo wurden von der International Federation of Football History and Statistics IFFHS in die besten Elf des Jahres 2023 aufgenommen. Mit dieser Auszeichnung werden die Leistungen der beiden Madrider Spieler im vergangenen Jahr gewürdigt. Olga erzielte das historische Tor, das Spanien den Weltmeistertitel bescherte, und wurde zur Spielerin des Finales gewählt. Linda leistete auch einen herausragenden Beitrag zur Weltmeisterschaft mit Kolumbien, eine Mannschaft, die sie bis ins Viertelfinale führte.
+
+    Beide Spieler wurden für den Goldenen Ball nominiert. Linda wurde außerdem zum Golden Girl 2023 für die beste U21-Spielerin gekürt und ist eine der Finalistinnen für die Wahl zur besten FIFA-Spielerin des Jahres 2023. Zu den beiden Spielern von Real Madrid im Team gesellen sich Mary Earps, Ilestedt, Renard, Oberdorf, Aitana Bonmatí, Miyazawa, Jenni Hermoso, Sam Kerr und Salma Paralluelo.",
 ];
