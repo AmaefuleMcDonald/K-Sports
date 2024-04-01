@@ -14,7 +14,7 @@ class LoginController extends Controller
     public function showLoginForm()
     {
         //return "Hello world";
-        return view('auth.login'); // Ensure you have the login view at resources/views/auth/login.blade.php
+        return view('auth.login'); 
     }
 
     protected function authenticated(Request $request, $user)

@@ -101,6 +101,18 @@ Route::middleware(['auth', 'checkrole:admin'])->group(function () {
 
 });
 
+Route::get('/news/news1', function () {
+    return view('news.news1');
+})->name('news1');
+
+Route::get('/news/news2', function () {
+    return view('news.news2');
+})->name('news2');
+
+Route::get('/news/news3', function () {
+    return view('news.news3');
+})->name('news3');
+
 
 
 
